@@ -66,3 +66,29 @@ Open your browser and navigate to:
 ```
 http://localhost:5000
 ```
+---
+## 📌 Usage Instructions
+
+### ▶️ Basic Operation
+
+1. Launch the application and open your browser to:  
+   **[http://localhost:5000](http://localhost:5000)**
+
+2. In the web interface:
+   - Enter **SQL queries** or **suspicious inputs** into the input field.
+   - Click the **"Check"** button to analyze the input.
+
+3. View the result of the analysis:
+   - ✅ **Green**: Safe input  
+   - ❌ **Red**: Potential SQL injection detected
+---
+## 🧪 Sample Testing
+
+Try these test cases to verify detection:
+
+| Input Type        | Sample Input                                        | Expected Result |
+|-------------------|-----------------------------------------------------|------------------|
+| Safe query        | `SELECT * FROM users WHERE id = 1`                  | ✅ Safe          |
+| Classic SQLi      | `' OR 1=1 --`                                        | ❌ Malicious     |
+| Union attack      | `UNION SELECT username, password FROM users`        | ❌ Malicious     |
+| Tautology         | `admin' OR '1'='1`                                   | ❌ Malicious     |
