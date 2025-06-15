@@ -92,3 +92,19 @@ Try these test cases to verify detection:
 | Classic SQLi      | `' OR 1=1 --`                                        | ❌ Malicious     |
 | Union attack      | `UNION SELECT username, password FROM users`        | ❌ Malicious     |
 | Tautology         | `admin' OR '1'='1`                                   | ❌ Malicious     |
+
+---
+## 🖼️ Screenshots
+
+### 🚨 Malicious Input Detected
+<img src="https://github.com/kakukiran/customer-segmentation-using-k-means-clustering/blob/b3504175883238045a78e63bb21c90905ff3c83e/results%20images/Picture2%20register%20page.png" alt="Register" width="300"/>
+
+
+A suspicious input like `SELECT id, name FROM products WHERE category = 'electronics` triggers the SQL injection alert.
+
+---
+
+### ✅ Safe Input Detected
+<img src="https://github.com/kakukiran/customer-segmentation-using-k-means-clustering/blob/b3504175883238045a78e63bb21c90905ff3c83e/results%20images/Picture2%20register%20page.png" alt="Register" width="300"/>
+An input such as `SELECT * FROM employees WHERE age > 30;` is correctly identified as safe.
+
