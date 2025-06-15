@@ -97,14 +97,12 @@ Try these test cases to verify detection:
 ## 🖼️ Screenshots
 
 ### 🚨 Malicious Input Detected
-<img src="https://github.com/kakukiran/customer-segmentation-using-k-means-clustering/blob/b3504175883238045a78e63bb21c90905ff3c83e/results%20images/Picture2%20register%20page.png" alt="Register" width="300"/>
-
-
+<img src="https://github.com/Lahari-balusu/SQLInjection-Detector-using-python-and-flask/blob/7c8c08e8e2a856235fa9a9307463bc15c32cc8eb/p%20images/Screenshot%202025-06-15%20130952.png" alt="input is not safe" width="300"/>
 A suspicious input like `SELECT id, name FROM products WHERE category = 'electronics` triggers the SQL injection alert.
 
 ---
 
 ### ✅ Safe Input Detected
-<img src="https://github.com/kakukiran/customer-segmentation-using-k-means-clustering/blob/b3504175883238045a78e63bb21c90905ff3c83e/results%20images/Picture2%20register%20page.png" alt="Register" width="300"/>
+<img src="https://github.com/Lahari-balusu/SQLInjection-Detector-using-python-and-flask/blob/7c8c08e8e2a856235fa9a9307463bc15c32cc8eb/p%20images/Screenshot%202025-06-15%20130941.png" alt="input is safe" width="300"/>
 An input such as `SELECT * FROM employees WHERE age > 30;` is correctly identified as safe.
 
